@@ -18,12 +18,9 @@ This project performs unsupervised clustering on a subset of the GTEx gene expre
 
 &nbsp; Source: \[GTEx Portal](https://gtexportal.org/home/datasets) → \*Open Access Data → Gene TPMs\*
 
-
-
 **Sample Metadata**
 
 &nbsp; Used for extracting tissue labels (column: `SMTS`) and filtering top tissues.
-
 
 
 ---
@@ -37,37 +34,25 @@ This project performs unsupervised clustering on a subset of the GTEx gene expre
 - Standardized expression data (`StandardScaler`).
 
 ### 2. Clustering
-- Performed clustering with:
+Performed clustering with:
+- **KMeans**
+- **Agglomerative Clustering**
 
-&nbsp; - **KMeans**
+Explored **k=5 to 15** for each method.
 
-&nbsp; - **Agglomerative Clustering**
-
-- Explored **k=5 to 15** for each method.
-
-- Evaluated clustering using:
-
-&nbsp; - Internal: Silhouette Score
-
-&nbsp; - External: Adjusted Rand Index (vs true tissue)
+Evaluated clustering using:
+- Internal: Silhouette Score
+- External: Adjusted Rand Index (vs true tissue)
 
 
+### 3. Cluster Evaluation & Interpretation
+Identified top genes using:
+- Variance across clusters
+- Cluster-specific expression profiles
 
-### 3. Cluster Evaluation \& Interpretation
-
-- Identified top genes using:
-
-&nbsp; - Variance across clusters
-
-&nbsp; - Cluster-specific expression profiles
-
-- Visualized:
-
-&nbsp; - Heatmaps of gene expression by cluster
-
-&nbsp; - (Optional: UMAP and PCA cluster visualization)
-
-
+Visualized:
+- Heatmaps of gene expression by cluster
+- (Optional: UMAP and PCA cluster visualization)
 
 ---
 

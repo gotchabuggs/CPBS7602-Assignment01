@@ -80,12 +80,11 @@ You can recreate the environment using `conda`:
 
 `conda create -n cpbs7602 python=3.10`
 `conda activate cpbs7602`
-`pip install -r requirements.txt`
 
-Alternatively, install the key dependencies manually:
+Install the key dependencies manually:
 `pip install pandas numpy matplotlib seaborn scikit-learn`
 
 ### How to Run
 From inside the cloned repo or folder:
-'jupyter notebook assignment_1.ipynb'
+`jupyter notebook assignment_1.ipynb`
 Rull all cells sequentially for full analysis.

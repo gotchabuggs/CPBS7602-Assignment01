@@ -80,8 +80,9 @@ You can recreate the environment using `conda`:
 
 `conda create -n cpbs7602 python=3.10`
 `conda activate cpbs7602`
+`pip install -r requirements.txt`
 
-Install the key dependencies manually:
+Alternatively, install the key dependencies manually:
 `pip install pandas numpy matplotlib seaborn scikit-learn`
 
 ### How to Run
